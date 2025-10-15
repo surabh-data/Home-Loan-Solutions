@@ -3,158 +3,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Loan Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Loan Consultation by Retired SBI Officer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            height: 60px;
-            margin-right: 1rem;
-        }
-        header h1 {
-            font-size: 1.5rem;
-        }
-        nav {
-            background-color: #0055a5;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            padding: 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #003366;
-        }
-        .banner {
-            background-color: #e6f0ff;
-            text-align: center;
-            padding: 2rem;
-        }
-        .banner h2 {
-            color: #003366;
-            font-size: 2rem;
-        }
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            header img {
-                margin-bottom: 0.5rem;
-            }
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #003366; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #0055a5; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 20px; background-color: white; margin: 20px; border-radius: 8px; }
+        footer { background-color: #003366; color: white; text-align: center; padding: 10px; }
+        form input, form textarea, form button { width: 100%; padding: 10px; margin-top: 10px; }
+        form button { background-color: #0055a5; color: white; border: none; cursor: pointer; }
+        form button:hover { background-color: #003366; }
+        img.logo { max-height: 80px; }
     </style>
 </head>
 <body>
-    <header>
-         <h1>Home Loan Help by Retired SBI Officer</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#knowledge">Loan Knowledge Hub</a>
-        <a href="#consultation">Consultation</a>
-        <a href="#faqs">FAQs</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="banner">
-        <h2>Guiding You Home, One Step at a Time</h2>
-    </div>
-    <section id="home">
-        <div class="card">
-            <h2>Welcome</h2>
-            <p>This website is dedicated to helping individuals understand and navigate the process of obtaining a home loan in India. With decades of experience at SBI, I offer free consultation and guidance to make your home ownership journey smooth and informed.</p>
-        </div>
-    </section>
-    <section id="about">
-        <div class="card">
-            <h2>About Me</h2>
-            <p>I am a retired officer from the State Bank of India with over 30 years of experience in banking and home loan services. My mission is to assist individuals and families in understanding the home loan process and to provide free, unbiased consultation.</p>
-        </div>
-    </section>
-    <section id="knowledge">
-        <div class="card">
-            <h2>Loan Knowledge Hub</h2>
-            <ul>
-                <li>Eligibility Criteria</li>
-                <li>Required Documents</li>
-                <li>Types of Home Loans</li>
-                <li>Understanding CIBIL Score</li>
-                <li>Tips to Improve Loan Approval Chances</li>
-            </ul>
-        </div>
-    </section>
-    <section id="consultation">
-        <div class="card">
-            <h2>Book a Free Consultation</h2>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Your Query:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-    <section id="faqs">
-        <div class="card">
-            <h2>FAQs</h2>
-            <ul>
-                <li>What is the minimum salary required for a home loan?</li>
-                <li>Can NRIs apply for home loans?</li>
-                <li>What are the tax benefits of home loans?</li>
-                <li>How long does the approval process take?</li>
-            </ul>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="card">
-            <h2>Contact</h2>
-            <p>Email: homeloansolutions.in</p>
-            <p>Phone: +91-1234567890</p>
-            <p>WhatsApp: Click to Chat</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Home Loan Help by Retired SBI Officer. All rights reserved.</p>
-    </footer>
+
+<header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Home Loan Consultation by Retired SBI Officer</h1>
+    <p>Guiding You Home, One Step at a Time</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#knowledge">Loan Knowledge Hub</a>
+    <a href="#consultation">Consultation</a>
+    <a href="#faqs">FAQs</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>This website is dedicated to helping individuals understand and navigate the process of obtaining home loans in India. With years of experience at SBI, our founder offers free consultation to guide you through every step.</p>
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>Our founder is a retired officer from the State Bank of India with decades of experience in banking and loan services. He now dedicates his time to help people secure home loans without any consultation charges.</p>
+</section>
+
+<section id="knowledge">
+    <h2>Loan Knowledge Hub</h2>
+    <ul>
+        <li>Eligibility Criteria: Age, Employment Type, Income Requirements</li>
+        <li>Documents Checklist: Aadhaar, PAN, Salary Slips, Property Papers</li>
+        <li>Loan Types: Purchase, Construction, Improvement, Balance Transfer</li>
+        <li>Understanding CIBIL Score and Credit Evaluation</li>
+        <li>Tax Benefits and Repayment Options</li>
+    </ul>
+</section>
+
+<section id="consultation">
+    <h2>Consultation Booking</h2>
+    <form onsubmit="sendToWhatsApp(); return false;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="message">Your Query:</label><br>
+        <textarea id="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Send via WhatsApp</button>
+    </form>
+
+    <script>
+        function sendToWhatsApp() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+            var phoneNumber = "919149362770"; // Replace with your father's WhatsApp number
+
+            var whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</section>
+
+<section id="faqs">
+    <h2>FAQs</h2>
+    <ul>
+        <li>What is the maximum tenure for a home loan?</li>
+        <li>Can NRIs apply for home loans?</li>
+        <li>What are the tax benefits of home loans?</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: richiesrb@gmail.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Home Loan Help by Ex SBI. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
-
