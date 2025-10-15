@@ -55,7 +55,54 @@
         <li>Tax Benefits and Repayment Options</li>
     </ul>
 </section>
+<section id="emi-calculator">
+  <h2>EMI Calculator</h2>
+  <div class="card">
+    <label for="loanAmount">Loan Amount (₹):</label>
+    <input type="number" id="loanAmount" placeholder="e.g. 500000" required>
 
+    <label for="interestRate">Annual Interest Rate (%):</label>
+    <input type="number" id="interestRate" placeholder="e.g. 7.5" required>
+
+    <label for="loanTenure">Loan Tenure (Years):</label>
+    <input type="number" id="loanTenure" placeholder="e.g. 20" required>
+
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+
+    <h3 id="emiResult" style="margin-top: 20px;"></h3>
+  </div>
+</section>
+
+https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js</script>
+<script>
+  let emiText = "";
+
+  function calculateEMI() {
+    const principal = parseFloat(document.getElementById("loanAmount").value);
+    const annualRate = parseFloat(document.getElementById("interestRate").value);
+    const years = parseFloat(document.getElementById("loanTenure").value);
+
+    const monthlyRate = annualRate / 12 / 100;
+    const months = years * 12;
+
+    const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) /
+                (Math.pow(1 + monthlyRate, months) - 1);
+
+    const result = "Estimated Monthly EMI: ₹" + emi.toFixed(2);
+    document.getElementById("emiResult").innerText = result;
+
+    emiText = `Home Loan EMI Calculation\\n\\nLoan Amount: ₹${principal}\\nInterest Rate: ${annualRate}%\\nLoan Tenure: ${years} years\\n\\n${result}`;
+  }
+
+  function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    doc.setFontSize(14);
+    doc.text(emiText, 20, 30);
+    doc.save("EMI_Calculation.pdf");
+  }
+</script>
 <section id="consultation">
     <h2>Consultation Booking</h2>
     <form onsubmit="sendToWhatsApp(); return false;">
@@ -106,3 +153,4 @@
 
 </body>
 </html>
+
