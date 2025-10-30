@@ -8,18 +8,32 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header as LinkedIn-style cover */
 header {
-    background-color: #003366;
+    background-image: url('logo.jpeg'); /* your cover image */
+    background-size: cover;             /* fills the header */
+    background-position: center;        /* centers the image */
+    background-repeat: no-repeat;
+    height: 220px;                      /* adjust height as needed */
     color: white;
-    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
+/* Optional: add text shadow for readability */
+header h1, header p {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    margin: 5px 0;
+}
+
+/* Hide the old logo image */
 header img.logo {
-    max-height: 80px;
-    display: block;
-    margin: 0 auto 10px;
+    display: none;
 }
 
 /* Navigation */
@@ -170,4 +184,13 @@ form button:hover {
     font-weight: bold;
     color: #003366;
     text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
