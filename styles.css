@@ -110,75 +110,64 @@ form button:hover {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover effect for the card */
 .emi-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
+/* Wrap label + input pair for clean vertical layout */
+.emi-card .emi-field {
+    margin-bottom: 15px;
+}
+
+/* Make sure all elements are block and full-width */
+.emi-card label,
+.emi-card input,
+.emi-card button,
+.emi-card h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Input fields */
 .emi-card input {
     border: 1px solid #0055a5;
     border-radius: 8px;
     padding: 12px;
-    margin-bottom: 15px;
     font-size: 16px;
 }
 
+.emi-card input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0,85,165,0.5);
+    outline: none;
+}
+
+/* Button */
+.emi-card button {
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.emi-card button:hover {
+    background-color: #003366;
+    transform: scale(1.03);
+}
+
+/* EMI Result */
 #emiResult {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
     color: #003366;
     text-align: center;
-}
-
-/* Consultation Form Card Styling */
-#consultation form {
-    background: linear-gradient(145deg, #ffffff, #f0f4ff);
-    padding: 25px;
-    border-radius: 15px;
-    max-width: 500px;
-    margin: 20px auto;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-/* References Section */
-#references {
-    background-color: #f9f9f9;
-    padding: 25px;
-    margin: 25px auto;
-    border-left: 6px solid #0055a5;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#references h2 {
-    color: #003b73;
-    margin-bottom: 15px;
-}
-
-#references ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 8px 0;
-    }
-    .emi-card, #consultation form {
-        width: 90%;
-        margin: 15px auto;
-    }
 }
