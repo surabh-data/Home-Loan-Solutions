@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Loan Consultation by Retired SBI Officer</title>
+    <title>Home Loan Solutions by Retired SBI Officer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
@@ -29,7 +29,8 @@
 <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#knowledge">Loan Knowledge Hub</a>
+    <a href="#knowledge">Knowledge Hub</a>
+    <a href="#knowledge">References</a>
     <a href="#consultation">Consultation</a>
     <a href="#faqs">FAQs</a>
     <a href="#contact">Contact</a>
@@ -55,6 +56,54 @@
         <li>Tax Benefits and Repayment Options</li>
     </ul>
 </section>
+    
+<section id="Authentic References" style="background-color: #f9f9f9; padding: 20px; margin: 20px; border-left: 5px solid #0055a5; border-radius: 8px;">
+  <h2>Authentic Financial Resources</h2>
+  <p>Explore trusted sources for loan interest rates, credit scores, government schemes, and tax benefits.</p>
+  <ul>
+    <li><strong>SBI Loan Interest Rates:</strong> Visit SBI's official site to check current home loan and personal loan interest rates. 
+      <a href="https://www.onlinesbi.sbi" target="_blank" style="color: #0055a5; text-decoration: underline;">https://www.onlinesedit score and learn how to improve it for better loan eligibility. 
+      <a href="https://www.cibil.com" target="_blank" style=">
+    <li><strong>PMAY Government Schemes:</strong> Learn about Pradhan Mantri Awas Yojana and other housing subsidies. 
+      <a href="https://pmaymis.gov.in" target="_blank" style="color: #0055a5; text-decoration: underline;">https://pmaymis.gov.in</aions available on home loans under Sections 80C and 24(b). 
+      https://incometaxindia.gov.inhttps://incometaxindia.gov.in</a>
+    </li>
+    <li><strong>SBI Profile on Britannica:</strong> Explore the history and credibility of the State Bank of India. 
+      <a href="https://www.britannica.com/topicnk-of-Indiahttps://www.britannica.com/topic/State-Bank-of-India</a>
+    </li>
+  </ul>
+</section>
+
+<section id="consultation">
+    <h2>Consultation Booking</h2>
+    <form onsubmit="sendToWhatsApp(); return false;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="message">Your Query:</label><br>
+        <textarea id="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Send via WhatsApp</button>
+    </form>
+
+    <script>
+        function sendToWhatsApp() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+            var phoneNumber = "919149362770"; // Replace with your father's WhatsApp number
+
+            var whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</section>
+          
 <section id="emi-calculator">
   <h2>EMI Calculator</h2>
   <div class="card">
@@ -103,35 +152,6 @@ https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js</script>
     doc.save("EMI_Calculation.pdf");
   }
 </script>
-<section id="consultation">
-    <h2>Consultation Booking</h2>
-    <form onsubmit="sendToWhatsApp(); return false;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required><br><br>
-
-        <label for="message">Your Query:</label><br>
-        <textarea id="message" rows="4" required></textarea><br><br>
-
-        <button type="submit">Send via WhatsApp</button>
-    </form>
-
-    <script>
-        function sendToWhatsApp() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            var fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-            var phoneNumber = "919149362770"; // Replace with your father's WhatsApp number
-
-            var whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
-            window.open(whatsappURL, "_blank");
-        }
-    </script>
-</section>
 
 <section id="faqs">
     <h2>FAQs</h2>
@@ -153,6 +173,7 @@ https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js</script>
 
 </body>
 </html>
+
 
 
 
