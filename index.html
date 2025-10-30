@@ -80,7 +80,7 @@
 
 <section id="emi-calculator">
     <h2>EMI Calculator</h2>
-    <div class="card">
+    <div class="emi-card">
         <label for="loanAmount">Loan Amount (₹):</label>
         <input type="number" id="loanAmount" placeholder="e.g. 500000" required>
 
@@ -91,9 +91,8 @@
         <input type="number" id="loanTenure" placeholder="e.g. 20" required>
 
         <button onclick="calculateEMI()">Calculate EMI</button>
-        <button onclick="downloadPDF()">Download PDF</button>
 
-        <h3 id="emiResult" style="margin-top: 20px;"></h3>
+        <h3 id="emiResult"></h3>
     </div>
 </section>
 
@@ -120,3 +119,4 @@
 
 </body>
 </html>
+
