@@ -1,55 +1,36 @@
-🏠 Home Loan Solutions by Ex-SBI Officer
-💡 About the Website
+# Home Loan Solutions
 
-Home Loan Solutions is a professional, user-friendly informational website built to guide individuals through the complex process of obtaining home loans in India, particularly focusing on the Delhi-NCR region.
-The website was inspired by the real-world expertise of a retired State Bank of India officer, who now dedicates his experience to helping people understand home loan procedures, eligibility, documentation, and government benefits — all at no consultation charge.
+Professional one-page website for Home Loan Solutions, a free home loan guidance service led by an ex-SBI officer.
 
-The platform offers:
+Live site: https://surabh-data.github.io/Home-Loan-Solutions/
 
-A clean and accessible interface for all age groups.
+## What The Site Includes
 
-A built-in EMI Calculator for accurate financial planning.
+- Trust-focused landing page for Delhi-NCR home loan clients
+- Service sections for eligibility, documentation, loan type selection, and repayment planning
+- EMI calculator with monthly EMI, total interest, and total payable estimates
+- WhatsApp consultation form with pre-filled client inquiry details
+- QR code asset for flyers, visiting cards, posters, and client sharing
+- Official resource links for SBI, CIBIL, PMAY, Income Tax India, RBI, and IBA
 
-A WhatsApp-based consultation form for instant communication.
+## Files
 
-A Knowledge Hub and Authentic References section linking users to verified government and banking resources.
+- `index.html` - page structure and content
+- `styles.css` - responsive visual design
+- `scripts.js` - EMI calculator, WhatsApp flow, and mobile navigation
+- `logo.jpeg` - brand/signage image
+- `website-qr.svg` - QR code for the live GitHub Pages website
 
-🛠️ Skills and Technologies Used
+## Run Locally
 
-This project was designed and developed with a combination of front-end web technologies and UI/UX design principles:
+Open `index.html` in a browser, or run a local static server from this folder:
 
-Category	Tools / Technologies
-Frontend	HTML5, CSS3, JavaScript
-Design Approach	Responsive design, Flexbox layout, Gradient backgrounds, Accessibility-friendly contrast
-Interactivity	DOM manipulation, JavaScript functions for WhatsApp integration and EMI calculation
-Deployment	GitHub Pages
-Version Control	Git & GitHub
-Business Thinking	Developed with a service-oriented mindset, emphasizing customer trust and transparency
-Visualization	Professional header with background cover (LinkedIn-style), clear card-based layout, and consistent color palette (#003366 & #0055a5)
-🎯 Key Features
+```bash
+python -m http.server 8000
+```
 
-✅ LinkedIn-style header with professional background image
-✅ Loan Knowledge Hub with essential topics
-✅ Authentic Financial Resources with verified external links (RBI, SBI, CIBIL, SEBI, NABARD, etc.)
-✅ EMI Calculator (simple and intuitive)
-✅ Direct WhatsApp consultation form
-✅ Fully responsive UI – optimized for desktop and mobile devices
-✅ Elegant, minimal design suitable for professionals and financial advisors
+Then visit `http://localhost:8000`.
 
-🚀 How to Run Locally
+## Notes
 
-Open the project folder in your code editor.
-
-Launch the website by opening index.html in your browser.
-
-🌐 Live Demo
-
-You can view the deployed website here:
-👉 Live Project Link (GitHub Pages)
-https://surabh-data.github.io/Home-Loan-Solutions/
-
-🙌 Credits
-
-Created and maintained by Surabh —
-Master’s in Information Systems | Cleveland State University
-Driven by the belief that financial literacy should be accessible to everyone.
+The EMI calculator is for planning only. Final rates, eligibility, fees, and approval terms depend on lender policies and documentation.
